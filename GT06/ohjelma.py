@@ -10,7 +10,7 @@ class Basket:
     def __init__(self, customer, contents, price):
         self.customer = customer
         self.contents = contents
-        self.price = price
+        ##self.price = price
 
     def return_customer(self):
         return self.customer
