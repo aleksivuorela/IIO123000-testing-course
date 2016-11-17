@@ -33,7 +33,7 @@ class Basket:
                     
     def count_discount_price(self, percent):
         discount = percent / 100.0
-        return self.price - self.price * discount
+       	return self.price - self.price * discount
 
 # Making a test object:
 jarin_ostoskori = Basket("Jari", ["maito","banaani","hernekeitto"], 15)

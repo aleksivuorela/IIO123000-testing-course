@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20161117 17:53:50.627" generator="Robot 3.0 (Python 2.7.6 on linux2)">
+<suite source="/home/administrator/IIO123000-testing-course/RobotFramework/google_website_online.robot" id="s1" name="Google Website Online">
+<test id="s1-t1" name="Go To Google And Do Some Checks">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${PAGE}</arg>
+<arg>firefox</arg>
+</arguments>
+<msg timestamp="20161117 17:53:50.764" level="INFO">Opening browser 'firefox' to base url 'https://www.google.fi/'</msg>
+<status status="PASS" endtime="20161117 17:53:56.162" starttime="20161117 17:53:50.763"></status>
+</kw>
+<kw name="Wait Until Page Contains" library="Selenium2Library">
+<doc>Waits until `text` appears on current page.</doc>
+<arguments>
+<arg>${TITLE}</arg>
+</arguments>
+<status status="PASS" endtime="20161117 17:53:56.196" starttime="20161117 17:53:56.162"></status>
+</kw>
+<kw name="Wait Until Element Contains" library="Selenium2Library">
+<doc>Waits until given element contains `text`.</doc>
+<arguments>
+<arg>tag=title</arg>
+<arg>${TITLE}</arg>
+</arguments>
+<status status="PASS" endtime="20161117 17:53:56.220" starttime="20161117 17:53:56.197"></status>
+</kw>
+<kw name="Title Should Be" library="Selenium2Library">
+<doc>Verifies that current page title equals `title`.</doc>
+<arguments>
+<arg>${TITLE}</arg>
+</arguments>
+<msg timestamp="20161117 17:53:56.230" level="INFO">Page title is 'Google'.</msg>
+<status status="PASS" endtime="20161117 17:53:56.230" starttime="20161117 17:53:56.221"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20161117 17:53:56.258" starttime="20161117 17:53:56.231"></status>
+</kw>
+<status status="PASS" endtime="20161117 17:53:56.259" critical="yes" starttime="20161117 17:53:50.762"></status>
+</test>
+<doc>A test suite with a single test for checking that Google website is online.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="PASS" endtime="20161117 17:53:56.260" starttime="20161117 17:53:50.629"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Google Website Online" pass="1">Google Website Online</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
